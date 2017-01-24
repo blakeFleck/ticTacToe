@@ -8,9 +8,9 @@ class Row2 extends Component {
   render() {
     return (
         <tr className="row2">
-        <td className= "square h"></td>
-        <td className= "square v h"></td>
-        <td className= "square h"></td>
+        <td onClick={(e) => this.props.handleClick(0)} className= "square h">{this.props.rowStatus[0]}</td>
+        <td onClick={(e) => this.props.handleClick(1)} className= "square v h">{this.props.rowStatus[1]}</td>
+        <td onClick={(e) => this.props.handleClick(2)} className= "square h">{this.props.rowStatus[2]}</td>
       </tr>
     );
   }
